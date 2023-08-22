@@ -68,3 +68,7 @@ plt.scatter(expected,predicted,c='b',marker='.',s=36)
 plt.plot(np.linspace(0, 330, 100),np.linspace(0, 330, 100), '--r', linewidth=2)
 
 plt.show()
+
+#reference: 
+# file: https://github.com/ravising-h/Diabetes-Datasets-LinearRegression/tree/master
+# code: https://github.com/syamkakarla98/Linear-Regression/blob/master/LinearRegression_DIABETES_Dataset.py
