@@ -16,7 +16,6 @@ diabetes=datasets.load_diabetes()
 X_data = pd.read_csv("E:/國防醫學院 醫學系/課業/lab/ML/Smith ML/0000000000002329_training_diabetes_x_y_train (1).csv")
 x_test = pd.read_csv("E:/國防醫學院 醫學系/課業/lab/ML/Smith ML/0000000000002329_test_diabetes_x_test.csv")  #pd.read_csv無此參數: columns = X_data.columns
 # 使用X_data的列名作为DataFrame的列名，即使列名是空的，也会被覆盖
-# x_test.columns[:x_test.shape[1]] = X_data.columns
 x_test.columns = X_data.columns[:x_test.shape[1]]  #感覺用X_data.columns[:-1]會更好
 
 y = X_data['Y']
